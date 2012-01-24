@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D0F72F1C14CF4C6B004B9208 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D0F72F1B14CF4C6B004B9208 /* Default.png */; };
-		D0F72F1F14CF4D09004B9208 /* Yoda.png in Resources */ = {isa = PBXBuildFile; fileRef = D0F72F1E14CF4D09004B9208 /* Yoda.png */; };
 		EB00C10714CF11F400E40C26 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB00C10614CF11F400E40C26 /* UIKit.framework */; };
 		EB00C10914CF11F400E40C26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB00C10814CF11F400E40C26 /* Foundation.framework */; };
 		EB00C10B14CF11F400E40C26 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB00C10A14CF11F400E40C26 /* CoreGraphics.framework */; };
@@ -18,13 +16,11 @@
 		EB00C11A14CF11F500E40C26 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB00C11814CF11F500E40C26 /* MainStoryboard.storyboard */; };
 		EB00C11D14CF11F500E40C26 /* TipCalcMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB00C11C14CF11F500E40C26 /* TipCalcMainViewController.m */; };
 		EB00C12014CF11F500E40C26 /* TipCalcFlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB00C11F14CF11F500E40C26 /* TipCalcFlipsideViewController.m */; };
-		EB3BFB2614CF73A900D73B81 /* Yoda.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3BFB2514CF73A900D73B81 /* Yoda.png */; };
-		EB3BFB2914CF744D00D73B81 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3BFB2814CF744D00D73B81 /* Default.png */; };
+		EB12A35714CF7B3E0033CEF3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EB12A35614CF7B3E0033CEF3 /* Default.png */; };
+		EB3BFB3414CF7AD700D73B81 /* Yoda.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3BFB3314CF7AD700D73B81 /* Yoda.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D0F72F1B14CF4C6B004B9208 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		D0F72F1E14CF4D09004B9208 /* Yoda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Yoda.png; sourceTree = "<group>"; };
 		EB00C10214CF11F400E40C26 /* TipCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB00C10614CF11F400E40C26 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EB00C10814CF11F400E40C26 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -40,8 +36,8 @@
 		EB00C11C14CF11F500E40C26 /* TipCalcMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipCalcMainViewController.m; sourceTree = "<group>"; };
 		EB00C11E14CF11F500E40C26 /* TipCalcFlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TipCalcFlipsideViewController.h; sourceTree = "<group>"; };
 		EB00C11F14CF11F500E40C26 /* TipCalcFlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipCalcFlipsideViewController.m; sourceTree = "<group>"; };
-		EB3BFB2514CF73A900D73B81 /* Yoda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Yoda.png; sourceTree = "<group>"; };
-		EB3BFB2814CF744D00D73B81 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		EB12A35614CF7B3E0033CEF3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		EB3BFB3314CF7AD700D73B81 /* Yoda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Yoda.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +57,8 @@
 		EB00C0F714CF11F000E40C26 = {
 			isa = PBXGroup;
 			children = (
-				EB3BFB2814CF744D00D73B81 /* Default.png */,
-				EB3BFB2514CF73A900D73B81 /* Yoda.png */,
-				D0F72F1E14CF4D09004B9208 /* Yoda.png */,
-				D0F72F1B14CF4C6B004B9208 /* Default.png */,
+				EB12A35614CF7B3E0033CEF3 /* Default.png */,
+				EB3BFB3314CF7AD700D73B81 /* Yoda.png */,
 				EB00C10C14CF11F400E40C26 /* TipCalc */,
 				EB00C10514CF11F400E40C26 /* Frameworks */,
 				EB00C10314CF11F400E40C26 /* Products */,
@@ -168,10 +162,8 @@
 			files = (
 				EB00C11114CF11F500E40C26 /* InfoPlist.strings in Resources */,
 				EB00C11A14CF11F500E40C26 /* MainStoryboard.storyboard in Resources */,
-				D0F72F1C14CF4C6B004B9208 /* Default.png in Resources */,
-				D0F72F1F14CF4D09004B9208 /* Yoda.png in Resources */,
-				EB3BFB2614CF73A900D73B81 /* Yoda.png in Resources */,
-				EB3BFB2914CF744D00D73B81 /* Default.png in Resources */,
+				EB3BFB3414CF7AD700D73B81 /* Yoda.png in Resources */,
+				EB12A35714CF7B3E0033CEF3 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
