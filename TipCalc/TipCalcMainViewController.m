@@ -8,11 +8,19 @@
 
 #import "TipCalcMainViewController.h"
 
+@interface TipCalcMainViewController()
+@property (nonatomic) BOOL userIsInTheMiddleOfEnteringADecimal;
+@property (nonatomic) int numberOfDecimals;
+@end
+
 @implementation TipCalcMainViewController
+
 @synthesize tipTextField;
 @synthesize totalTextField;
 @synthesize billTextField;
 @synthesize rateField;
+@synthesize userIsInTheMiddleOfEnteringADecimal;
+@synthesize numberOfDecimals;
 
 
 - (void)didReceiveMemoryWarning
@@ -81,23 +89,37 @@
 }
 
 - (IBAction)digitPressed:(UIButton *)sender {
-    NSString *text = [NSString stringWithFormat:@"%@%@", billTextField.text, sender.titleLabel.text];
+    if (numberOfDecimals < 2) {
+        NSString *text = [NSString stringWithFormat:@"%@%@", billTextField.text, sender.titleLabel.text];
+        
+        billTextField.text = text;
+        
+        [self rateSelected:self.rateField];
+    }
     
-    billTextField.text = text;
+    if (userIsInTheMiddleOfEnteringADecimal == YES) {
+        numberOfDecimals++;
+    } else {
+        numberOfDecimals = 0;
+    }
     
-    [self rateSelected:self.rateField];
+    if ([@"." isEqualToString:sender.titleLabel.text]) {
+        userIsInTheMiddleOfEnteringADecimal = YES;
+    }
 }
 
 - (IBAction)clearPressed:(id)sender {
     billTextField.text = @"";
     tipTextField.text = @"";
     totalTextField.text = @"";
+    userIsInTheMiddleOfEnteringADecimal = NO;
+    numberOfDecimals = 0;
     
 }
 
 - (IBAction)rateSelected:(UISegmentedControl *)sender {
     
-    double bill = [billTextField.text doubleValue];
+    float bill = [billTextField.text floatValue];
     
     // Update the Tip field
     switch ([sender selectedSegmentIndex]) 
@@ -105,44 +127,24 @@
         case 0:
             // 10%
             tipTextField.text = [NSString stringWithFormat:@"%g", (bill * 0.1)];
-                
             break;
         case 1:
             // 15%
             tipTextField.text = [NSString stringWithFormat:@"%g", (bill * 0.15)];
-            
             break;
         case 2:
             // 20%
             tipTextField.text = [NSString stringWithFormat:@"%g", (bill * 0.2)];
-            
             break;
             
     }
     
     // Update the Total field
-    double tip = [tipTextField.text doubleValue];
-    double total = bill + tip;
+    float tip = [tipTextField.text floatValue];
+    float total = bill + tip;
     totalTextField.text = [NSString stringWithFormat:@"%g", total];
 }
 @end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
